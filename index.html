@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(243, 232, 232);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+      }
+
+      .image-column {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("image-product.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      .content-column {
+        flex: 1;
+        text-align: left;
+        padding: 20px;
+      }
+
+      h1 {
+        color: black;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      #last {
+        color: rgb(41, 119, 41);
+      }
+
+      p {
+        color: #666;
+      }
+
+      #space {
+        color: gray;
+        font-size: 12px;
+        line-height: 1;
+      }
+
+      #small {
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: gray;
+        text-decoration: line-through;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(41, 119, 41);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-column"></div>
+      <div class="content-column">
+        <p id="space">P E R F U M E</p>
+        <h1>Gabrielle Essence Eau De Perfume</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <table>
+          <tr>
+            <td><h1 id="last">$149.99</h1></td>
+            <td><p id="small">$469.99</p></td>
+          </tr>
+        </table>
+        <a href="#" class="btn"
+          ><img
+            src="https://tse4.mm.bing.net/th?id=OIP.mJTEFDPpaO2siApbo1vpAQHaHa&pid=Api&P=0&h=220"
+            width="15px"
+            height="10px"
+          />Add To Cart</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
